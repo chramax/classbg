@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+   
+    "name": "ClassBG",
+    "version": "0.1.0",
+    "description": "Edit Google Classroom Background",
+    "icons": {
+      "16": "Icon/icon16.png",
+      "32": "Icon/icon32.png",
+      "48": "Icon/icon48.png",
+      "128": "Icon/icon128.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_title": "ClassBG - Version 1.0"
+    },
+    "content_scripts": [{
+      "css": ["styles.css"],
+      "js": ["script.js"],
+      "matches": ["https://classroom.google.com/*"]
+    }]
+   
+  }
